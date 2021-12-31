@@ -1,48 +1,38 @@
-
 .box {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: 
-      linear-gradient(45deg, transparent, transparent 40%, yellow),
-      linear-gradient(#262626, #141414);
-    animation: rotate 1.5s linear infinite;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent, transparent 40%, yellow),
+    linear-gradient(#262626, #141414);
+  animation: rotate 1.5s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .box:before,
+body .box:after {
+  content: " ";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background: linear-gradient(#161616, #262626);
+  border-radius: inherit;
+}
+body .box:before {
+  background: linear-gradient(45deg, transparent, transparent 40%, yellow);
+  filter: blur(32px);
+}
 
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
 
-
-
-  }
-  body .box:before,
-  body .box:after {
-    content: " ";
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    right: 8px;
-    bottom: 8px;
-    background: linear-gradient(#161616, #262626);
-    border-radius: inherit;
-  }
-  body .box:before {
-    background: 
-      linear-gradient(45deg, transparent, transparent 40%, yellow);
-    filter: blur(32px);
-  }
-  
-  @keyframes rotate {
-    100% {
-      transform: rotate(360deg);
-      filter: hue-rotate(360deg);
-    }
-  }
-  
-  
-  
-  
-  /*
+/*
   sass
   
   * {
@@ -93,4 +83,3 @@
   
   
   */
-  
