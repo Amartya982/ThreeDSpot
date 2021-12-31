@@ -1,15 +1,15 @@
 
 import 'bulma/css/bulma.css'
 import Hero from './HeroSection/Hero';
-
-import './Ap.css';
 import Navbar from '../src/Nav/Navbar';
+import Footer from "../src/Footer/Footer"
 
 function App() {
   return (
    <>
    <Navbar/>
    <Hero/>
+   <Footer/>
    </>
   );
 }

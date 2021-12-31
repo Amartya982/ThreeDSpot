@@ -1,32 +1,37 @@
-import React from 'react';
-import styled from 'styled-components';
-import Burger from './Burger';
-import logo from "../assets/a.png"
+import React from "react";
+import styled from "styled-components";
+import Burger from "./Burger";
+import logo from "../assets/a.png";
 
 const Nav = styled.nav`
-  width: 100%;
-  height: 55px;
-
-  padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  flex-direction:row;
 
   .logo {
-    padding: 0px 50px;
+    width: 15rem;
+  
   }
-`
+
+`;
 
 const Navbar = () => {
   return (
-    <Nav>
+    <section className="hero">
+  <div className="hero-body">
+   <Nav>
       <div className="logo">
-        <figure className='image is-128x128'>
-          <img src={logo} alt="" />
+        <figure className="image is-128x128">
+          <img src={logo} alt=""  className="logo-image"/>
         </figure>
       </div>
       <Burger />
     </Nav>
-  )
-}
+    </div>
+ 
+    </section>
+  
+  );
+};
 
-export default Navbar
+export default Navbar;
