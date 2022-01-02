@@ -6,8 +6,9 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   li {
-    width: 20rem;
+    width: 150px;
     color: #fff;
+    justify-content: space-between;
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -15,7 +16,7 @@ const Ul = styled.ul`
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
-    z-index: 2;
+    z-index: 10;
     right: 0;
     height: 100vh;
     width: 300px;
@@ -31,7 +32,7 @@ const RightNav = ({ open }) => {
   return (
     <section className="hero">
       <div className="hero-body">
-        <Ul open={open}>
+        <Ul open={open} className="link ">
           <li className="link">Home</li>
           <li>About Us</li>
           <li>Contact Us</li>

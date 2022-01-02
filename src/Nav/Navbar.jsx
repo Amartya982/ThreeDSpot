@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import 'bulma/css/bulma.css'
 import Burger from "./Burger";
 import "./Navbar.css";
 import logo from "../assets/a.png";
