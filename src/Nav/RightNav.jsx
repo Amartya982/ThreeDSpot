@@ -6,9 +6,11 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   li {
-    width: 150px;
+    width: 160px;
+    text-align:center;
     color: #fff;
     justify-content: space-between;
+    font-family: 'Courier Prime', monospace;
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -20,10 +22,15 @@ const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 300px;
-    padding-top: 5.5rem;
+    padding-top: 10.5rem;
     transition: transform 0.3s ease-in-out;
     li {
       color: #fff;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px;
+      font-family: 'Courier Prime', monospace;
+      cursor:pointer;
     }
   }
 `;

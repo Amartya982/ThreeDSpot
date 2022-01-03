@@ -3,3 +3,16 @@
 margin-right: auto;
 }
 }
+@media (max-width: 480px) {
+    .logo{
+    margin-right: auto;
+  
+    }
+    .logo-image{
+        position: relative;
+    padding-left: 35px;
+    left: -50px;
+    margin-right: auto;
+
+    }
+    }

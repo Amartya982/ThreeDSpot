@@ -25,6 +25,8 @@
   justify-content: center;
   align-items: center;
   z-index: 5;
+  margin-top: auto;
+  margin-bottom: auto;
 
 }
 
@@ -50,20 +52,39 @@ body .box:before {
     filter: hue-rotate(360deg);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .man {
     display: block;
-    width: 90%;
+    width: 60%;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 250px;
+    
+ 
 
   
   }
   .box{
     width: 300px;
     height: 300px;
-    margin-top: 250px;
+
+ 
+  }
+}
+
+@media (max-width: 480px) {
+  .man {
+    display: block;
+    width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+ 
+
+  
+  }
+  .box{
+    width: 300px;
+    height: 300px;
+
   }
 }
 

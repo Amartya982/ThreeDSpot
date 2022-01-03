@@ -16,7 +16,7 @@ const Footer = () => {
         <section class="hero footer-section">
             <div className="hero-body">
                 <div className="columns">
-                    <div className="column">
+                    <div className="column mr-auto">
                         <div className="social-icons">
                             <a
                                 id="footer-icons"
