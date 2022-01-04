@@ -3,7 +3,7 @@ import styled from "styled-components";
 import 'bulma/css/bulma.css'
 import Burger from "./Burger";
 import "./Navbar.css";
-import logo from "../assets/a.png";
+import logo from "../../assets/a.png";
 
 const Nav = styled.nav`
   display: flex;
@@ -11,9 +11,7 @@ const Nav = styled.nav`
   flex-direction: row;
   height: 100px;
   margin-top: -50px;
-  .logo {
-    width: 15rem;
-  }
+ 
 `;
 
 const Navbar = () => {
@@ -21,13 +19,12 @@ const Navbar = () => {
     <section className="hero">
       <div className="hero-body">
         <Nav>
-          <div className="logo">
-            <figure className="image is-128x128">
-              <img src={logo} alt="" className="logo-image" />
-            </figure>
+          <div className="logo-box">
+          <p className="logo">3D Spot</p>
           </div>
           <Burger />
         </Nav>
+        <hr className="line"/>
       </div>
     </section>
   );

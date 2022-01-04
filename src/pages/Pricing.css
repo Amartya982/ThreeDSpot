@@ -1,0 +1,172 @@
+.pricing-section {
+  background: black;
+  margin-top: -100px;
+}
+.pricing-title {
+  font-family: "../assets/fonts/ReadexPro-Bold.ttf";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 55px;
+  text-align: center;
+  color: #ffffff;
+}
+.pricing-subtitle {
+  font-family: "../assets/fonts/ReadexPro-Bold.ttf";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+.simple {
+  background: #ffd600;
+  border-radius: 20px;
+  position: relative;
+  width: 270px;
+  height: 395px;
+  border: 2px solid #112340;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px rgba(255, 255, 255, 0.87);
+}
+.moderate{
+    background: white!important;
+    border-radius: 20px;
+    position: relative;
+    width: 20px;
+    height: 395px;
+    border: 2px solid #112340;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px rgba(255, 214, 0, 1);
+}
+.complex{
+    background: #ffd600;
+    border-radius: 20px;
+    position: relative;
+    width: 270px;
+    height: 395px;
+    border: 2px solid #112340;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px rgba(255, 255, 255, 0.87);
+}
+.simple-overlap {
+  border: 2px solid #112340;
+  position: absolute;
+  border-radius: 20px;
+  width: 250px;
+  height: 370px;
+}
+
+.moderate {
+  background: #ffd600;
+  border-radius: 20px;
+  width: 270px;
+  height: 395px;
+  border: 2px solid #112340;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.complex {
+  background: #ffd600;
+  border-radius: 20px;
+  width: 270px;
+  height: 395px;
+  border: 2px solid #112340;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.verycomplex {
+  background: #ffd600;
+  width: 270px;
+  height: 395px;
+  border: 2px solid #112340;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.pricing-order {
+  background: #ffd600;
+  font-family: "../assets/fonts/ReadexPro-Bold.ttf";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #112340;
+  border-radius: 20px;
+  margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 47px;
+  width: 220px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.price-overlap {
+  position: relative;
+  text-align: center;
+  border: 2px solid #112340;
+  box-sizing: border-box;
+  height: 45px;
+  top: -5px;
+  display: flex;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+
+  width: 220px;
+  border-radius: 10px;
+}
+.correct {
+  font-family: "../assets/fonts/ReadexPro-Bold.ttf";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #112340;
+}
+.simple-head {
+  font-family: "../assets/fonts/ReadexPro-Bold.ttf";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #112340;
+}
+.price {
+  font-family: "../assets/fonts/ReadexPro-Bold.ttf";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 35px;
+  text-align: center;
+  color: #112340;
+}
+.pricing-line {
+  border: 1px solid #112340;
+  opacity: 0.5;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+.pricing-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}

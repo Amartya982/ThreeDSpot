@@ -1,0 +1,41 @@
+
+.logo {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.line {
+  border: 0.1px solid grey;
+  color: rgba(255, 255, 255, 0.06);
+  opacity: 0.1;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-right: auto;
+  }
+}
+@media (max-width: 480px) {
+
+  .logo-box{
+    position: absolute;
+    margin-right: auto;
+   
+  }
+  .logo {
+    position: relative;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .line {
+    border: 0.1px solid grey;
+    color: rgba(255, 255, 255, 0.06);
+    opacity: 0.1;
+    margin-top: -35px;
+  }
+}

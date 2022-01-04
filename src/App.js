@@ -1,15 +1,21 @@
 
 import 'bulma/css/bulma.css'
-import Hero from './HeroSection/Hero';
-import Navbar from '../src/Nav/Navbar';
-import Footer from "../src/Footer/Footer"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from './pages/Home';
+import  Pricing from "./pages/Pricing"
+import Navbar from './Home/Nav/Navbar';
 
 function App() {
   return (
    <>
-   <Navbar/>
-   <Hero/>
-   <Footer/>
+  <Router>
+  <Navbar/>
+        <Switch>
+      
+          <Route exact path="/" component={Home} />
+          <Route exact path="/pricing" component={Pricing}/>
+        </Switch>
+      </Router>
    </>
   );
 }

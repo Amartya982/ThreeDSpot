@@ -1,0 +1,29 @@
+.contact {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 56px;
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  color: white;
+  width: 160px;
+  padding: 12px;
+  margin-top: -9px;
+  outline: none;
+  border: none;
+
+}
+@media (max-width: 768px) {
+  .contact{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    color: black;
+    background: wheat;
+  }
+  .link{
+    color: rgb(5, 3, 3);
+  }
+
+}
