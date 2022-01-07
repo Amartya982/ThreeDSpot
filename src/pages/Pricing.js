@@ -127,13 +127,13 @@ const Pricing = () => {
                     </div>
                     <div className="column">
                         <div className="moderate">
-                            <p className='simple-head has-text-centered mt-5'>Simple</p>
+                            <p className='simple-head has-text-centered mt-5'>Need to Talk</p>
                             <br />
-                            <p className='price has-text-centered'>$40</p>
+                            <p className='price has-text-centered'>-</p>
                             <hr className='pricing-line' />
                             <button className='pricing-order '>
                                 <div className="price-overlap">
-                                    Order Now
+                                    Chat Now
                                 </div>
 
                             </button>
@@ -141,28 +141,26 @@ const Pricing = () => {
 
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                Simple Keychains
+                                For bigger and complicated
+                                projects
                             </div>
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                Human face
+                                If your projects is very very small
                             </div>
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                APIs Payment Gateway
+                                For any other queries
                             </div>
                             <br />
-                            <div className="correct has-text-left ml-4">
-                                <BsCheckCircleFill className='icons mr-2' />
-                                $0 Fee Withdrawl
-                            </div>
+
                         </div>
 
                     </div>
                 </div>
-              
+
             </div>
 
         </section>

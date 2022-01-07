@@ -43,7 +43,7 @@ const RightNav = ({ open }) => {
       <div className="hero-body">
         <Ul open={open} className="link ">
           <li>
-            <Link style={{ color: "#FFD600" }} to="/">
+            <Link style={{ color: "white" }} to="/">
               <font className="link"> Home</font>
             </Link>
           </li>
@@ -62,7 +62,9 @@ const RightNav = ({ open }) => {
               <font className="link"> About</font>
             </Link>
           </li>
+          <Link to="/Contact">
           <button className="contact">Contact Us</button>
+          </Link>
         </Ul>
       </div>
     </section>
