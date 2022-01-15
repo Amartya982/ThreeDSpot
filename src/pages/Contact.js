@@ -35,13 +35,13 @@ const Contact = () => {
     <section className='hero contact-section'>
       <div className="hero-body">
         <div className="columns">
-          <div className='column'>
+          <div className='column contact-image'>
             <figure>
               <img src={man} alt="" />
             </figure>
 
           </div>
-          <hr className='line-break' />
+  
 
           <div className="column">
             <p className='contact-title has-text-centered'>Contact US</p>

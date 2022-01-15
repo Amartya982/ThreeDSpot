@@ -39,12 +39,12 @@ const Pricing = () => {
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                APIs Payment Gateway
+                                Scan Cleanup
                             </div>
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                $0 Fee Withdrawl
+                                More...
                             </div>
 
 
@@ -67,22 +67,22 @@ const Pricing = () => {
 
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                2 Bank Account
-                            </div>
-                            <br />
-                            <div className="correct has-text-left ml-4">
-                                <BsCheckCircleFill className='icons mr-2' />
                                 Human Full Body
                             </div>
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                APIs Payment Gateway
+                                Relief Model
                             </div>
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                $0 Fee Withdrawl
+                                Props
+                            </div>
+                            <br />
+                            <div className="correct has-text-left ml-4">
+                                <BsCheckCircleFill className='icons mr-2' />
+                                More...
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const Pricing = () => {
 
                             <p className='simple-head has-text-centered mt-5'>Complicated</p>
                             <br />
-                            <p className='price has-text-centered'>$100</p>
+                            <p className='price has-text-centered'>$120</p>
                             <hr className='pricing-line' />
                             <button className='pricing-order '>
                                 <div className="price-overlap">
@@ -103,22 +103,22 @@ const Pricing = () => {
 
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                Simple Keychains
+                                Game Character
                             </div>
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                Human face
+                                Action Figure
                             </div>
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                APIs Payment Gateway
+                                Ship, car, Truck...
                             </div>
                             <br />
                             <div className="correct has-text-left ml-4">
                                 <BsCheckCircleFill className='icons mr-2' />
-                                $0 Fee Withdrawl
+                                More...
                             </div>
 
 

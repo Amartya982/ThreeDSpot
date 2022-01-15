@@ -1,5 +1,5 @@
 import React from 'react'
-import spider from "../../assets/sp 1.png"
+import spider from "../../assets/us-1.webp"
 import "./Hero.css"
 
 const Hero = () => {
@@ -16,9 +16,12 @@ const Hero = () => {
                             Send the 2D Image and get a 3D Model ready for 3D Printing at a affordable cost.
                         </p>
                         <br />
-                        <button className='order'>
-                            Order Now
-                        </button>
+                        <a href="/pricing">
+                            <button className='order'>
+                                Order Now
+                            </button>
+                        </a>
+
                         <button className='learn'>
                             Learn more
                         </button>
@@ -26,12 +29,12 @@ const Hero = () => {
                     </div>
                     <div className="column image-section">
                         <figure className='image'>
-                            <img src={spider} alt="" />
+                            <img src={spider} alt="" className='model-hero' />
                         </figure>
                     </div>
                 </div>
             </div>
-
+      
         </section>
     )
 }

@@ -1,5 +1,37 @@
-body {
-  background: #050203;
+.gallery-section {
+  margin-top: 80px;
+}
+.gallery-title {
+  font-family: Readex Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25.9406px;
+  line-height: 109px;
+  color: #ffffff;
+}
+.gallery-title1 {
+  font-family: Readex Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25.9406px;
+  line-height: 109px;
+  color: #ffffff;
+}
+.gallery-title2 {
+  font-family: Readex Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25.9406px;
+  line-height: 109px;
+  color: #ffffff;
+}
+.gallery-title3 {
+  font-family: Readex Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25.9406px;
+  line-height: 109px;
+  color: #ffffff;
 }
 
 .carousel-container {
@@ -8,35 +40,67 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.carousel-container1 {
+  height: 100vh;
+  margin-top: -55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-container2 {
+  height: 100vh;
+  margin-top: -55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-container3 {
+  height: 100vh;
+  margin-top: -55px;
+  margin-left: auto;
+  margin-right: auto;
+}
 #curated-image {
-  height: 400px;
-  width: auto;
+  height: 340px;
+  width: 340px;
 }
 #curated-image2 {
-  height: 400px;
-  width: 450px;
+  height: 340px;
+  width: 340px;
   outline: none;
   border-radius: 20px;
+
   border: none;
 }
 #curated-image3 {
-  height: 400px;
-  width: 450px;
+  height: 340px;
+  width: 340px;
   outline: none;
   border-radius: 12px;
   border: none;
 }
 #curated-card {
-  background: #1f1e20;
+  background: black;
   border: 0.979228px solid white;
   border-radius: 13.7092px;
-  height: 400px;
+  height: 340px;
+  width: 340px;
   display: flex;
   flex-direction: column;
   flex-basis: 100px;
   margin: 10px;
   margin-bottom: 40px;
   box-shadow: 8px 8px 0px yellow;
+  
+}
+.gallery {
+  margin-top: -84px;
+  font-family: Readex Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 64px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .curated-container {
@@ -149,31 +213,107 @@ body {
   #curated-button {
     font-size: 14px;
   }
-  .carousel-container {
-   
-    margin-top: -135px;
+  .gallery-section {
+  }
+  .gallery {
+    font-size: 2.5rem;
+  }
+    
+  .gallery-title {
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 1.5rem;
+  }
+  .gallery-title1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -250px;
+    font-size: 1.5rem;
+  }
+  .gallery-title2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -250px;
+    font-size: 1.5rem;
+
+  }
+  .gallery-title3 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -250px;
+    font-size: 1.5rem;
   }
 
+  .carousel-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+  }
+  .carousel-container1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+  }
+  .carousel-container2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+  }
+  .carousel-container3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+  }
+  .gallery {
+  }
   #curated-card {
-    background: #1f1e20;
+    background: #000000;
     border: 0.979228px solid rgba(255, 255, 255, 0.2);
     border-radius: 13.7092px;
-    height: 400px;
     display: flex;
+    height: 300px;
+    width: 300px;
     flex-direction: column;
     flex-basis: 100px;
     margin: 10px;
-    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 180px;
   }
   #curated-image3 {
-    height: 400px;
+    height: 300px;
+    width: 300px;
     outline: none;
     border-radius: 12px;
     border: none;
   }
-
+  #curated-image2 {
+    height: 300px;
+    outline: none;
+    width: 300px;
+    border-radius: 12px;
+    border: none;
+  }
+  #curated-image {
+    height: 300px;
+    width: 300px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+  }
   #curated-button {
     font-family: Inter;
     font-style: normal;

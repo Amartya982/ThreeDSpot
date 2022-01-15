@@ -6,19 +6,25 @@ import  Pricing from "./pages/Pricing"
 import Navbar from './Home/Nav/Navbar';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
+import Footer from './Home/footer/Footer';
+
 
 function App() {
   return (
    <>
   <Router>
+
+
   <Navbar/>
         <Switch>
+
       
           <Route exact path="/" component={Home} />
           <Route exact path="/pricing" component={Pricing}/>
           <Route exact path="/contact" component={Contact}/>
           <Route exact path="/gallery" component={Gallery}/>
         </Switch>
+        <Footer/>
       </Router>
    </>
   );

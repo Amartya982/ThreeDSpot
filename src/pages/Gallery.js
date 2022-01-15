@@ -1,9 +1,27 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import model1 from "../assets/WhatsApp Image 2022-01-07 at 10.27.24 AM.jpeg"
-import model from "../assets/sp 1.png"
-import model2 from "../assets/MODEL2.jpeg"
+import img from 'react-optimized-image';
+import model from "../assets/realistic_webp/1.webp"
+import model1 from "../assets/realistic_webp/2.webp"
+import model2 from "../assets/realistic_webp/3.webp"
+import model3 from "../assets/realistic_webp/4.webp"
+import model4 from "../assets/realistic_webp/5.webp"
+import model5 from "../assets/realistic_webp/6.webp"
+import model12 from "../assets/action_webp/1.webp"
+import model13 from "../assets/action_webp/2.webp"
+import model14 from "../assets/action_webp/3.webp"
+import model15 from "../assets/action_webp/4.webp"
+import model16 from "../assets/action_webp/5.webp"
+import model17 from "../assets/action_webp/6.webp"
+import model27 from "../assets/sketch_webp/1.webp"
+import model28 from "../assets/sketch_webp/2.webp"
+import model29 from "../assets/sketch_webp/3.webp"
+import model33 from "../assets/cartoon_webp/1.webp"
+import model34 from "../assets/cartoon_webp/2.webp"
+import model35 from "../assets/cartoon_webp/3.webp"
+
+
 import "./Gallery.css";
 
 const Card = () => {
@@ -23,68 +41,270 @@ const Card = () => {
   };
   return (
     <>
-      <Carousel responsive={responsive} containerClass="carousel-container">
-        <div className="card" id="curated-card">
-          <div className="card-content-curated">
-            <div className="curatedcard-image">
-              <figure className="image">
-                <img src={model1} id="curated-image2" className="curated-image" alt="Placeholder" />
-              </figure>
+      <section className="hero gallery-section">
+        <div className="hero-body">
+          <p className="gallery has-text-centered">Gallery</p>
+          <p className="gallery-title">Likeness</p>
+          <Carousel responsive={responsive} containerClass="carousel-container">
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
             </div>
-            <br />
-          </div>
-        </div>
-        <div className="card" id="curated-card">
-          <div className="card-content-curated">
-            <div className="curatedcard-image">
-              <figure className="image">
-                <img src={model} id="curated-image" className="curated-image" alt="Placeholder" />
-              </figure>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model1} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
             </div>
-            <br />
-          </div>
-        </div>
-        <div className="card" id="curated-card">
-          <div className="card-content-curated">
-            <div className="curatedcard-image">
-              <figure className="image">
-                <img src={model2} id="curated-image3" className="curated-image" alt="Placeholder" />
-              </figure>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model2} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
             </div>
-            <br />
-          </div>
-        </div>
-        <div className="card" id="curated-card">
-          <div className="card-content-curated">
-            <div className="curatedcard-image">
-              <figure className="image">
-                <img src={model1} id="curated-image3" className="curated-image" alt="Placeholder" />
-              </figure>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model3} id="curated-image2"  className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
             </div>
-            <br />
-          </div>
-        </div>
-        <div className="card" id="curated-card">
-          <div className="card-content-curated">
-            <div className="curatedcard-image">
-              <figure className="image">
-                <img src={model2} id="curated-image3" className="curated-image" alt="Placeholder" />
-              </figure>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model4} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
             </div>
-            <br />
-          </div>
-        </div>
-        <div className="card" id="curated-card">
-          <div className="card-content-curated">
-            <div className="curatedcard-image">
-              <figure className="image">
-                <img src={model} className="curated-image" alt="Placeholder" />
-              </figure>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model5} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
             </div>
-            <br />
-          </div>
+
+      
+
+       
+
+          </Carousel>
+          <p className="gallery-title1">Action Figure</p>
+          <Carousel responsive={responsive} containerClass="carousel-container1">
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model12} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model13} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model14} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model15} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model16} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model17} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+          
+          </Carousel>
+          <p className="gallery-title2">Sketch</p>
+          <Carousel responsive={responsive} containerClass="carousel-container2">
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model27} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model28} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model29} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+          
+
+
+          </Carousel>
+          <p className="gallery-title3">Cartoonist</p>
+          <Carousel responsive={responsive} containerClass="carousel-container3">
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model33} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model34} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <div className="card" id="curated-card">
+
+              <div className="card-content-curated">
+                <div className="curatedcard-image">
+
+                  <figure className="image">
+                    <img src={model35} id="curated-image2" className="curated-image" alt="Placeholder" />
+                  </figure>
+                </div>
+                <br />
+              </div>
+            </div>
+
+          </Carousel>
         </div>
-      </Carousel>
+      </section>
+
     </>
 
 

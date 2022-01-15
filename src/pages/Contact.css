@@ -3,6 +3,7 @@
 
 }
 
+
 .contact-title {
   font-family: Readex Pro;
   font-style: normal;
@@ -12,14 +13,14 @@
   color: #ffffff;
 }
 
-/* .line-break {
-  height: 20rem;
+.line-break {
+  height: 40rem;
   position: relative;
+  margin-top: -100px;
   margin-left: auto;
   margin-right: auto;
-  border-right: 1px solid white;
-  box-shadow: -2px 0px 2px white;
-} */
+  border-right: solid black transparent;
+}
 .submit-button {
   background: #ffd600;
   border-radius: 14px;
@@ -36,6 +37,7 @@
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   border: none;
@@ -48,4 +50,24 @@
   width: 476px;
   height: 150px;
   color: white;
+}
+
+@media only screen and (max-width: 480px) {
+.contact-image{
+  display: none;
+}
+.contact-section {
+margin-top: 50px;
+}
+.contact-title{
+  font-size: 20px;
+}
+.line-break{
+  display: none;
+}
+.submit-button {
+margin-top: 90px;
+font-size: 25px;
+}
+
 }
