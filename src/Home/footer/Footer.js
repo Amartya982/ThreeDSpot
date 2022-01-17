@@ -11,7 +11,7 @@ const Footer = () => {
 
     return (
         <section class="hero footer-section">
-                  <hr className="line" />
+            <hr className="line" />
             <div className="hero-body">
 
 
@@ -22,19 +22,19 @@ const Footer = () => {
                     <div className="column has-text-centered">
                         <div className="footer-link">
                             <a href="/collection" className="link">
-                                Collections
-                            </a>
-                            <a href="/buy rare walrus" className="link">
-                                Buy Rare Walrus
+                                Products
                             </a>
                             <a href="/gallery" className="link">
-                                Gallary
+                                Gallery
+                            </a>
+                            <a href="/contact" className="link">
+                                Contact Us
                             </a>
                         </div>
                         <br />
                         <br />
                         <p className="copyright has-text-centered">
-                            ©Walrus Club, Inc. 2021. We love our users!
+                        © 3D Spot, Inc. 2021. We love our users!
                         </p>
                     </div>
 

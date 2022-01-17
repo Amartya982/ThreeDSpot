@@ -79,7 +79,7 @@
 }
 #curated-card {
   background: black;
-  border: 0.979228px solid white;
+  border: 0.979228px solid black;
   border-radius: 13.7092px;
   height: 340px;
   width: 340px;
@@ -89,7 +89,7 @@
   margin: 10px;
   margin-bottom: 40px;
   box-shadow: 8px 8px 0px yellow;
-  
+
 }
 .gallery {
   margin-top: -84px;
@@ -281,7 +281,7 @@
   }
   #curated-card {
     background: #000000;
-    border: 0.979228px solid rgba(255, 255, 255, 0.2);
+    border: 0.979228px solid black;
     border-radius: 13.7092px;
     display: flex;
     height: 300px;
@@ -292,6 +292,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 180px;
+    box-shadow: 8px 8px 4px 2px yellow;
+
   }
   #curated-image3 {
     height: 300px;
