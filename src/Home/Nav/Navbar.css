@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 75px;
+  height: 80px;
   width: 100%;
   background-color: black;
   color: white;
@@ -24,6 +24,7 @@
   line-height: 120%;
   color: #ffffff;
 }
+
 .line {
   border: 0.1px solid grey;
   color: rgba(255, 255, 255, 0.06);
@@ -42,6 +43,29 @@
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 10px;
+  font-family: Readex Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  cursor: pointer;
+}
+.login-butt{
+  background: rgba(255, 255, 255, 0.08)!important;
+  border-radius: 56px;
+  padding:px;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #ffffff;
+}
+.cart-icon{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
   font-family: Readex Pro;
   font-style: normal;
   font-weight: bold;
@@ -70,6 +94,12 @@
   .nav-links {
     display: none;
   }
+  .login-butt{
+    background: white!important;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .nav-links-mobile {
     position: absolute;
     display: block;
@@ -92,10 +122,21 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
   }
+  .cart{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center; 
+    padding: 20px;
+    align-items: center;
+
+  }
+ 
   .mobile-menu-icon {
     display: block;
     position: absolute;

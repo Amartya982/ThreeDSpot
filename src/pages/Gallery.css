@@ -36,7 +36,7 @@
 
 .carousel-container {
   height: 100vh;
-  margin-top: -55px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -88,8 +88,7 @@
   flex-basis: 100px;
   margin: 10px;
   margin-bottom: 40px;
-  box-shadow: 8px 8px 0px yellow;
-
+  box-shadow: 8px 8px 0px rgba(255, 214, 0, 1);
 }
 .gallery {
   margin-top: -84px;
@@ -114,28 +113,6 @@
   flex-direction: row;
   width: fit-content;
   align-items: center;
-}
-
-#curated-button {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16.5306px;
-  line-height: 26px;
-  display: flex;
-  color: #ffffff;
-  padding: 11px 15px;
-  background: #f43165;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  align-items: center;
-  display: flex;
-}
-
-#curated-button:hover {
-  background: #ca1c4b;
 }
 
 .title-curatedcard {
@@ -218,14 +195,13 @@
   .gallery {
     font-size: 2.5rem;
   }
-    
+
   .gallery-title {
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
     font-size: 1.5rem;
   }
   .gallery-title1 {
@@ -234,7 +210,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -250px;
     font-size: 1.5rem;
   }
   .gallery-title2 {
@@ -242,10 +217,7 @@
     margin-right: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: -250px;
     font-size: 1.5rem;
-
   }
   .gallery-title3 {
     margin-left: auto;
@@ -253,29 +225,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -250px;
     font-size: 1.5rem;
   }
 
   .carousel-container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -200px;
+
   }
   .carousel-container1 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -200px;
+
   }
   .carousel-container2 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -200px;
+
   }
   .carousel-container3 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -200px;
+
   }
   .gallery {
   }
@@ -293,7 +264,6 @@
     margin-right: auto;
     margin-bottom: 180px;
     box-shadow: 8px 8px 4px 2px yellow;
-
   }
   #curated-image3 {
     height: 300px;

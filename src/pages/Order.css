@@ -1,0 +1,58 @@
+.order-button {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  background: #FBFBFB;
+  /* whiteAlpha/300 */
+  color: #000000;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 277px;
+  cursor: pointer;
+}
+.create-button {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  background: #ffd600;
+  /* whiteAlpha/300 */
+  padding: 20px;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin-right: 50px;
+  width: 277px;
+  cursor: pointer;
+}
+.order-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media (max-width: 480px) {
+  .order-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -110px;
+  }
+  .create-button {
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .order-button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

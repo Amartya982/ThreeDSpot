@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
+import {HiOutlineShoppingCart} from "react-icons/hi"
 import { Link } from 'react-router-dom'
 
 
@@ -8,24 +9,34 @@ const Navbar = () => {
     return (
        <>
             <nav className='navbar'>
-            <h3 className='logo'>3D Spot</h3>
+
+            <Link to="/" className='logo-link'>
+            <h3 className='logo'>
+                3D Spot
+                </h3>
+                </Link>
             <ul className={isMobile ? 'nav-links-mobile' : 'nav-links'}
                 onClick={() => setIsMobile(false)}>
                 <Link to="/" className='home'>
                     <li>Home</li>
                 </Link>
                 <Link to="/pricing" className='home'>
-                    <li>Pricing</li>
+                    <li>Store</li>
                 </Link>
 
                 <Link to="/gallery" className='home'>
                     <li>Gallery</li>
                 </Link>
-                <Link to="/about" className='home'>
-                    <li>About</li>
+                <Link to="/order" className='home'>
+                    <li>Order</li>
                 </Link>
-                <Link to="/contact" className='home contact'>
-                    <li>Contact Us</li>
+          
+                <Link to="/login" className='home login-butt' >
+                    <li className=''>Login</li>
+                </Link>
+                <Link to="/cart" className='cart'>
+                <HiOutlineShoppingCart className='cart-icon'style={{ fontSize: '36px' }} />
+                
                 </Link>
             </ul>
             <button className='mobile-menu-icon'
