@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import Footer from "./Home/footer/Footer";
 import Login from "../src/pages/Login"
 import Order from "./pages/Order";
+import CreateOrder from "./pages/CreateOrder";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/order" component={Order} />
+          <Route exact path="/createorder" component={CreateOrder} />
         </Switch>
         <Footer />
       </Router>

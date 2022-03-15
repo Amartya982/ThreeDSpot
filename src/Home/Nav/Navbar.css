@@ -64,14 +64,7 @@
 .cart-icon{
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  margin-left: 20px;
-  font-family: Readex Pro;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 120%;
-  cursor: pointer;
+
 }
 .home:hover {
   color: yellow;
@@ -96,9 +89,14 @@
   }
   .login-butt{
     background: white!important;
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .cart-icon{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  
   }
   .nav-links-mobile {
     position: absolute;

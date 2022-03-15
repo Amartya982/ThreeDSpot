@@ -15,7 +15,7 @@
   font-weight: bold;
   font-size: 25.9406px;
   line-height: 109px;
-  color: #ffffff;
+  color: #FBFBFB;
 }
 .gallery-title2 {
   font-family: Readex Pro;
@@ -42,19 +42,19 @@
 }
 .carousel-container1 {
   height: 100vh;
-  margin-top: -55px;
+  margin-top: -100px;
   margin-left: auto;
   margin-right: auto;
 }
 .carousel-container2 {
   height: 100vh;
-  margin-top: -55px;
+  margin-top: -100px;
   margin-left: auto;
   margin-right: auto;
 }
 .carousel-container3 {
   height: 100vh;
-  margin-top: -55px;
+  margin-top: -100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,7 +67,6 @@
   width: 340px;
   outline: none;
   border-radius: 20px;
-
   border: none;
 }
 #curated-image3 {
@@ -87,8 +86,9 @@
   flex-direction: column;
   flex-basis: 100px;
   margin: 10px;
+  margin-top: -150px;
   margin-bottom: 40px;
-  box-shadow: 8px 8px 0px rgba(255, 214, 0, 1);
+  box-shadow: 8px 8px 12px rgb(255, 255, 0);
 }
 .gallery {
   margin-top: -84px;
@@ -204,48 +204,29 @@
     align-items: center;
     font-size: 1.5rem;
   }
-  .gallery-title1 {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-  .gallery-title2 {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-  }
-  .gallery-title3 {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-
+  
   .carousel-container {
     margin-left: auto;
     margin-right: auto;
+    margin-top: -80px;
 
   }
   .carousel-container1 {
     margin-left: auto;
     margin-right: auto;
+    margin-top: -250px;
 
   }
   .carousel-container2 {
     margin-left: auto;
     margin-right: auto;
+    margin-top: -250px;
 
   }
   .carousel-container3 {
     margin-left: auto;
     margin-right: auto;
+    margin-top: -250px;
 
   }
   .gallery {

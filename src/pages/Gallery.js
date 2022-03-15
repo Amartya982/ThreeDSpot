@@ -20,7 +20,7 @@ import model29 from "../assets/sketch_webp/3.webp"
 import model33 from "../assets/cartoon_webp/1.webp"
 import model34 from "../assets/cartoon_webp/2.webp"
 import model35 from "../assets/cartoon_webp/3.webp"
-
+import model0 from "../assets/626f065f-0649-4efc-aac7-0c6408968995.jpeg"
 
 import "./Gallery.css";
 
@@ -44,7 +44,7 @@ const Card = () => {
       <section className="hero gallery-section">
         <div className="hero-body">
           <p className="gallery has-text-centered">Gallery</p>
-          <p className="gallery-title">Likeness</p>
+
           <Carousel responsive={responsive} containerClass="carousel-container">
 
             <div className="card" id="curated-card">
@@ -53,7 +53,7 @@ const Card = () => {
                 <div className="curatedcard-image">
 
                   <figure className="image">
-                    <img src={model} id="curated-image2" className="curated-image" alt="Placeholder" />
+                    <img src={model0} id="curated-image2" className="curated-image" alt="Placeholder" />
                   </figure>
                 </div>
                 <br />
@@ -130,7 +130,7 @@ const Card = () => {
        
 
           </Carousel>
-          <p className="gallery-title1">Action Figure</p>
+        
           <Carousel responsive={responsive} containerClass="carousel-container1">
 
             <div className="card" id="curated-card">
@@ -213,7 +213,7 @@ const Card = () => {
 
           
           </Carousel>
-          <p className="gallery-title2">Sketch</p>
+        
           <Carousel responsive={responsive} containerClass="carousel-container2">
 
             <div className="card" id="curated-card">
@@ -259,7 +259,7 @@ const Card = () => {
 
 
           </Carousel>
-          <p className="gallery-title3">Cartoonist</p>
+    
           <Carousel responsive={responsive} containerClass="carousel-container3">
 
             <div className="card" id="curated-card">

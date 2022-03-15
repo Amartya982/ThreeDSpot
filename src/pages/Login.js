@@ -47,6 +47,7 @@ export default function SignIn() {
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
+        className='outer-card'
           sx={{
             marginTop: 8,
             padding:3,
@@ -54,9 +55,10 @@ export default function SignIn() {
             flexDirection: 'column',
             alignItems: 'center',
             backgroundColor:"white"
+      
           }}
         >
-          <Avatar sx={{ m: 1, }}>
+          <Avatar sx={{ m: 1,opacity:1 }}>
           <figure className='image'>
           <img src={logo} />
           

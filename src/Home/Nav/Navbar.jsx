@@ -34,8 +34,8 @@ const Navbar = () => {
                 <Link to="/login" className='home login-butt' >
                     <li className=''>Login</li>
                 </Link>
-                <Link to="/cart" className='cart'>
-                <HiOutlineShoppingCart className='cart-icon'style={{ fontSize: '36px' }} />
+                <Link to="/cart" className='home cart'>
+                <HiOutlineShoppingCart className='cart-icon'style={{ fontSize: '20px' }} />
                 
                 </Link>
             </ul>
