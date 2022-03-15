@@ -6,9 +6,8 @@ const multer = require('multer')
 
 mongoose.connect(process.env.MONGOURI, {useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false })
 
-
-const { cartRoute } = require('./routes')
 const server = express()
+const { cartRoute } = require('./routers')
 server.use(express.json({limit: '50mb'}));
 server.use(express.urlencoded({limit: '50mb', extended: true}));
 server.use("/api", express.static(__dirname))
