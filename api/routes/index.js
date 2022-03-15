@@ -1,5 +1,5 @@
-const cartRoutes = require('./cartRoute')
+const cartRoute = require('./cartRoute')
 
 module.exports = {
-  cartRoutes
+  cartRoute
 }

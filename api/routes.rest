@@ -1,1 +1,1 @@
-GET http://localhost:3007/api/carts
+http://localhost:3007/api/carts
