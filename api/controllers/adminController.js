@@ -7,9 +7,10 @@ exports.getAllAdmins = async function (req, res) {
   const admins = await Admin.find({})
   res.status(200).json(admins)
 }
-exports.getAdmin = async function (req, res) {
-  const admin = await Admin.findOne({ _id: req.params.id })
-  res.status(200).json(admin)
+exports.getAdminByID = async function (req, res) {
+  const adminID = req.params.adminID
+  
+  res.send(adminID)
 }
 exports.addAdmin = async function (req, res) {
   const salt = await bcrypt.genSalt(3);

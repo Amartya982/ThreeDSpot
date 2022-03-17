@@ -1,0 +1,79 @@
+@hostname = localhost
+@port = {{$dotenv PORT}}
+@baseURL = http://{{hostname}}:{{port}}/api
+
+
+
+
+
+
+
+
+
+##### ADMIN ROUTES ####
+#
+#
+#
+
+# @name getAllAdmins
+GET {{baseURL}}/admins
+
+###
+
+# @name getAdminByID
+@adminID = admin1
+GET {{baseURL}}/admins/{{adminID}} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### USER ROUTES ##############
+#
+#
+#
+
+###
+
+# @name getAllUsers
+GET {{baseURL}}/users
+
+###
+
+# @name getUserByID
+@userID = user1
+GET {{baseURL}}/users/{{userID}}
+
+
+
+
+
+
+
+
+
+##### PRDOUCT ROUTES ##############
+#
+#
+#
+
+###
+
+# @name getAllProducts
+GET {{baseURL}}/products 
+
+###
+
+# @name getProductByID
+@productID = product1
+GET {{baseURL}}/products/{{productID}}

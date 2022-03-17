@@ -1,23 +1,19 @@
 const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
 const jsonwebtoken = require("jsonwebtoken")
-const Teacher = require('../models/teacherModel')
-const Class = require('../models/classModel')
 const fs = require("fs")
 
-exports.getAllTeachers = async function (req, res) {
-  const teachers = await Teacher.find({}, "-image")
-  res.status(200).json(teachers)
+exports.getAllUsers = async function (req, res) {
+  res.send('get all users')
 }
-exports.getTeacher = async function (req, res) {
-  const teacher = await Teacher.findOne({ _id: req.params.id })
-  res.status(200).json(teacher)
+exports.getUserByID = async function (req, res) {
+  res.send('get user by ID')
 }
-exports.addTeacher = async function (req, res) {
+exports.addUser = async function (req, res) {
   const salt = await bcrypt.genSalt(3);
   const hashedPassword = await bcrypt.hash(req.body.password, salt);
-  
-  const newTeacher = await new Teacher({
+
+  const newUser = await new Teacher({
     ...req.body,
     password: hashedPassword
   }).save()
@@ -45,7 +41,7 @@ exports.addTeacher = async function (req, res) {
   res.status(200).json(newTeacher)
 }
 
-exports.login = async function (req, res) {
+exports.signin = async function (req, res) {
   try {
     //CHECK IF THE TEACHER EXISTS
     const teacher = await Teacher.findOne({ email: req.body.email }).populate('class')
