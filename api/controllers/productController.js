@@ -1,3 +1,5 @@
+const models = require('../models')
+
 exports.getAllProducts = async function (req, res) {
   res.send('get all products')
 }

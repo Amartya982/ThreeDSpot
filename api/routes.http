@@ -44,12 +44,9 @@ GET {{baseURL}}/admins/{{adminID}}
 #
 
 ###
-
 # @name getAllUsers
 GET {{baseURL}}/users
-
 ###
-
 # @name getUserByID
 @userID = user1
 GET {{baseURL}}/users/{{userID}}

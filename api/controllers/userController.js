@@ -1,70 +1,83 @@
 const bcrypt = require('bcrypt')
-const mongoose = require('mongoose')
 const jsonwebtoken = require("jsonwebtoken")
-const fs = require("fs")
+const models = require('../models')
+
+const { userModel } = models
 
 exports.getAllUsers = async function (req, res) {
-  res.send('get all users')
+  const users = await userModel.find({})
+  res.status(200).send(users)
 }
-exports.getUserByID = async function (req, res) {
-  res.send('get user by ID')
-}
-exports.addUser = async function (req, res) {
-  const salt = await bcrypt.genSalt(3);
-  const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
-  const newUser = await new Teacher({
-    ...req.body,
-    password: hashedPassword
-  }).save()
-  if (req.body.class) {
-    const isValidClass = mongoose.Types.ObjectId.isValid(req.body.class)
-    if (isValidClass) {
-      await Class.updateOne(
-        { _id: req.body.class },
-        { $push: { teachers: newTeacher._id } }
-      )
+exports.getUserByID = async function (req, res) {
+  const userID = req.params.userID
+  try {
+    const user = await userModel.findById(userID)
+    if (!user) {
+      throw 'User not found'
+    }
+    else {
+      res.status(200).json(user)
     }
   }
-  if (req.body.image) {
-    fs.writeFile(
-      `${__dirname}/../uploads/images/profile/${newTeacher._id.toString().replace(/\//g, "-")}.jpg`,
-      req.body.image,
-      'base64',
-      (err) => {
-        if (err) {
-          throw err
-        }
+  catch (error) {
+    res.status(400).json({
+      error: {
+        message: error
       }
-    )
+    })
   }
-  res.status(200).json(newTeacher)
+}
+
+exports.signup = async function (req, res) {
+  try {
+    const salt = await bcrypt.genSalt(3);
+    const hashedPassword = await bcrypt.hash(req.body.password, salt);
+    const emailAddressExists = await userModel.findOne({ emailAddress: req.body.emailAddress })
+    if (emailAddressExists) {
+      throw "Email address already exists"
+    }
+    else {
+      const newUser = await new userModel({
+        ...req.body,
+        password: hashedPassword
+      }).save()
+      res.status(200).json(newUser)
+    }
+  }
+  catch (error) {
+    res.status(400).json({
+      error: {
+        message: error
+      }
+    })
+  }
 }
 
 exports.signin = async function (req, res) {
   try {
-    //CHECK IF THE TEACHER EXISTS
-    const teacher = await Teacher.findOne({ email: req.body.email }).populate('class')
-    if (teacher) {
+    //CHECK IF THE user EXISTS
+    const user = await userModel.findOne({ email: req.body.email })
+    if (user) {
       //CHECK IF THE PASSWORD MATCHES
       const isPasswordMatched = await bcrypt.compare(
         req.body.password,
-        teacher.password
+        user.password
       );
       if (isPasswordMatched) {
         //SIGN THE STUDENT ID AND ROLE WITH JSONWEBTOKEN
         const token = jsonwebtoken.sign(
-          { _id: teacher._id, role: "teacher" },
+          { _id: user._id, role: "user" },
           process.env.TOKEN_SECRET
         );
-        const isActive = teacher.status === 'active'
-        if (isActive) {
-          res.status(200).json({ authToken: token, ...teacher._doc });
+        //CHECK IF THE USER ACCOUNT IS ACTIVE
+        const isDisabled = user.isDisabled
+        if (!isDisabled) {
+          res.status(200).json({ authToken: token, ...user._doc });
         }
         else {
           throw "This account has been deactivated, Please contact an administrator"
         }
-
       }
       else {
         //THROW ERROR FOR INCORRECT PASSWORD
@@ -75,7 +88,6 @@ exports.signin = async function (req, res) {
       //THROW ERROR FOR INVALID EMAIL ADDRESS
       throw "Invalid Email or Password"
     }
-
   }
   catch (err) {
     console.log(err)
@@ -88,19 +100,19 @@ exports.signin = async function (req, res) {
 }
 
 
-exports.activate = async function (req, res) {
-  //RE-FORMAT THE TEACHER ID
-  const teacherID = req.params.teacherID.replace(/-/g, "/")
+exports.enable = async function (req, res) {
+  //RE-FORMAT THE user ID
+  const userID = req.params.userID.replace(/-/g, "/")
   try {
     //CHECK IF THE ACCOUNT EXISTS
-    const teacher = await Teacher.findById(teacherID)
-    if (teacher) {
-      if (teacher.status === "inactive") {
-        await Teacher.updateOne({ _id: teacherID }, { status: "active" })
+    const user = await user.findById(userID)
+    if (user) {
+      if (user.isDisabled) {
+        await userModel.updateOne({ _id: userID }, { isDisabled: false })
         res.status(200).json({})
       }
       else {
-        throw "Account already activated"
+        throw "Account already Enabled"
       }
     }
     else {
@@ -117,15 +129,15 @@ exports.activate = async function (req, res) {
   }
 }
 
-exports.deactivate = async function (req, res) {
+exports.disable = async function (req, res) {
   //RE-FORMAT THE STUDENT ID
-  const teacherID = req.params.teacherID.replace(/-/g, "/")
+  const userID = req.params.userID.replace(/-/g, "/")
   try {
     //CHECK IF THE ACCOUNT EXISTS
-    const teacher = await Teacher.findById(teacherID)
-    if (teacher) {
-      if (teacher.status === "active") {
-        await Teacher.updateOne({ _id: teacherID }, { status: "inactive" })
+    const user = await userModel.findById(userID)
+    if (user) {
+      if (!user.isDisabled) {
+        await userModel.updateOne({ _id: userID }, { isDisabled: true })
         res.status(200).json({})
       }
       else {
@@ -148,9 +160,9 @@ exports.deactivate = async function (req, res) {
 
 exports._delete = async function (req, res) {
   try {
-    //RE-FORMAT THE TEACHER ID
-    const teacherID = req.params.teacherID.replace(/-/g, "/")
-    await Teacher.findByIdAndDelete(teacherID)
+    //RE-FORMAT THE user ID
+    const userID = req.params.userID.replace(/-/g, "/")
+    await userModel.findByIdAndDelete(userID)
     res.status(200).json({})
   } catch (err) {
     res.status(400).json({
@@ -163,9 +175,9 @@ exports._delete = async function (req, res) {
 
 exports.editProfile = async (req, res) => {
   try {
-    const teacherID = req.params.teacherID.replace(/-/g, "/")
-    await Teacher.updateOne(
-      { _id: teacherID },
+    const userID = req.params.userID.replace(/-/g, "/")
+    await user.updateOne(
+      { _id: userID },
       { ...req.body }
     )
     res.status(200).json({})
