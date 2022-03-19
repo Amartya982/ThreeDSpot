@@ -3,20 +3,25 @@ const dotenv = require('dotenv').config()
 const mongoose = require('mongoose')
 const cors = require('cors')
 const multer = require('multer')
+const routers = require('./routers')
 
-mongoose.connect(process.env.MONGOURI, {useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false })
+mongoose.connect(process.env.MONGOURI, { useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false })
 
 const server = express()
-const { cartRoute } = require('./routers')
-server.use(express.json({limit: '50mb'}));
-server.use(express.urlencoded({limit: '50mb', extended: true}));
+const { cartRouter, productRouter, userRouter, adminRouter, orderRouter } = routers
+server.use(express.json({ limit: '50mb' }));
+server.use(express.urlencoded({ limit: '10mb', extended: true }));
 server.use("/api", express.static(__dirname))
 server.use(cors())
 
-server.use("/api/carts", cartRoute)
+server.use("/api/carts", cartRouter)
+server.use("/api/products", productRouter)
+server.use("/api/users", userRouter)
+server.use("/api/admins", adminRouter)
+server.use("/api/orders", orderRouter)
 
-server.get('/api/testConnection', (req, res) => {
-  console.log("request at /testConnection")
+server.get('/api/ping', (req, res) => {
+  console.log("ping request")
   res.status(200).end()
 });
 
