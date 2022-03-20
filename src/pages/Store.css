@@ -1,0 +1,108 @@
+.store-section {
+  background: black;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.store-box {
+  background: #ffd600;
+  border-radius: 20px;
+  position: relative;
+  width: 270px;
+  height: 395px;
+  border: 2px solid #112340;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 1rem 2rem rgba(255, 196, 4, 0.808);
+}
+.store-image img {
+  background-color: black;
+  width: 90%;
+  height: auto;
+  margin-left: px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  position: relative;
+  border-radius: 15px;
+}
+.price-button{
+  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 10px 40px;
+}
+.store-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 5vw);
+  grid-gap: 100px;
+  margin-top: 50px;
+}
+
+.store-order {
+  background: #ffd600;
+  font-family: "../assets/fonts/ReadexPro-Bold.ttf";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #112340;
+  border-radius: 20px;
+  margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 47px;
+  width: 220px;
+  top: 30px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.store-overlap {
+  position: relative;
+  text-align: center;
+  border: 2px solid #112340;
+  box-sizing: border-box;
+  height: 45px;
+  top: -130px;
+  display: flex;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  margin-top: 250px;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .store-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+  }
+
+  .store-column {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 100px;
+  }
+}

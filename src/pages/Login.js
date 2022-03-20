@@ -9,7 +9,6 @@ import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import logo from "../assets/a.png"
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -98,10 +97,11 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               className="login-button"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt:-10, mb: 2 }}
             >
               Sign In
             </Button>
+     
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2" className="link">
@@ -109,7 +109,7 @@ export default function SignIn() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2" className="link">
+                <Link href="/signup" variant="body2" className="link">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

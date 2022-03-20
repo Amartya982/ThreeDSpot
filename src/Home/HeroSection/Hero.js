@@ -22,7 +22,7 @@ const Hero = () => {
               affordable cost.
             </p>
             <br />
-            <a href="/pricing">
+            <a href="/order">
               <button className="order">Order Now</button>
             </a>
 
