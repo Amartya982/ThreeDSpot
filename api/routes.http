@@ -10,19 +10,55 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ##### ADMIN ROUTES ####
 #
 #
 #
-
-# @name getAllAdmins
-GET {{baseURL}}/admins
-
+@adminID = 623741957f8e2a1160c4cf2c
 ###
-
-# @name getAdminByID
-@adminID = admin1
+# @name GET_ALL_ADMINS
+GET {{baseURL}}/admins
+####################################################
+# @name GET_ADMIN_BY_ID
 GET {{baseURL}}/admins/{{adminID}} 
+####################################################
+# @name CREATE_ADMIN
+POST {{baseURL}}/admins/create
+Content-Type: application/json
+
+{
+  "emailAddress": "ilechuks73@gmail.com",
+  "firstName": "joshua",
+  "lastName": "ilechukwu",
+  "gender": "male",
+  "homeAddress": "home address",
+  "maritalStatus": "single",
+  "password": "password"
+}
+####################################################
+# @name SIGNIN
+POST {{baseURL}}/admins/signin
+Content-Type: application/json
+
+{
+  "emailAddress": "ilechuks73@gmail.com",
+  "password": "password"
+}
+####################################################
+# @name DELETE
+DELETE {{baseURL}}/admins/{{adminID}}
 
 
 
@@ -42,14 +78,41 @@ GET {{baseURL}}/admins/{{adminID}}
 #
 #
 #
-
+@userID = user1
 ###
 # @name getAllUsers
 GET {{baseURL}}/users
 ###
 # @name getUserByID
-@userID = user1
+
 GET {{baseURL}}/users/{{userID}}
+###
+# @name signup
+POST {{baseURL}}/users/signup 
+Content-Type: application/json
+
+{
+  "emailAddress": "test@gmail.com",
+  "firstName": "joshua",
+  "lastName": "ilechukwu",
+  "gender": "male",
+  "homeAddress": "home address",
+  "maritalStatus": "single",
+  "password": "password"
+}
+###
+# @name signin
+POST {{baseURL}}/users/signin 
+Content-Type: application/json
+
+{
+  "emailAddress": "ilechuks@gmail.com",
+  "password": "password"
+}
+###
+# @name deactivate
+@userID =  user1
+GET {{baseURL}}/users/acti
 
 
 

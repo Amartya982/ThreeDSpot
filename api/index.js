@@ -2,12 +2,12 @@ const express = require('express')
 const dotenv = require('dotenv').config()
 const mongoose = require('mongoose')
 const cors = require('cors')
-const multer = require('multer')
 const routers = require('./routers')
 
+const server = express()
 mongoose.connect(process.env.MONGOURI, { useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false })
 
-const server = express()
+
 const { cartRouter, productRouter, userRouter, adminRouter, orderRouter } = routers
 server.use(express.json({ limit: '50mb' }));
 server.use(express.urlencoded({ limit: '10mb', extended: true }));

@@ -57,7 +57,7 @@ exports.signup = async function (req, res) {
 exports.signin = async function (req, res) {
   try {
     //CHECK IF THE user EXISTS
-    const user = await userModel.findOne({ email: req.body.email })
+    let user = await userModel.findOne({ email: req.body.email })
     if (user) {
       //CHECK IF THE PASSWORD MATCHES
       const isPasswordMatched = await bcrypt.compare(
@@ -67,7 +67,7 @@ exports.signin = async function (req, res) {
       if (isPasswordMatched) {
         //SIGN THE STUDENT ID AND ROLE WITH JSONWEBTOKEN
         const token = jsonwebtoken.sign(
-          { _id: user._id, role: "user" },
+          { _id: user._id, role: user.role },
           process.env.TOKEN_SECRET
         );
         //CHECK IF THE USER ACCOUNT IS ACTIVE
@@ -76,7 +76,7 @@ exports.signin = async function (req, res) {
           res.status(200).json({ authToken: token, ...user._doc });
         }
         else {
-          throw "This account has been deactivated, Please contact an administrator"
+          throw "This account has been disabled"
         }
       }
       else {
