@@ -1,27 +1,37 @@
 import "bulma/css/bulma.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import Pricing from "./pages/Pricing";
+import Home from "./pages/HomePage/HomePage";
+import Store from "./pages/Store/Store";
 import Navbar from "./Home/Nav/Navbar";
-import Contact from "./pages/Contact";
-import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact/Contact";
+import Gallery from "./pages/Gallery/Gallery";
 import Footer from "./Home/footer/Footer";
-import Login from "../src/pages/Login"
-import Order from "./pages/Order";
+import Login from "./pages/Login/Login";
+import Order from "./pages/Order/Order";
+import SignUp from "./pages/Signup/Signup";
+import CreateOrder from "./pages/CreateOrder/CreateOrder";
+import Dashboard from "./pages/AdminDashboard/Dashboard";
+import HomePage from "./pages/HomePage/HomePage";
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/pricing" component={Pricing} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/gallery" component={Gallery} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/order" component={Order} />
-        </Switch>
-        <Footer />
+        <div>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/store" component={Store} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/gallery" component={Gallery} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/order" component={Order} />
+            <Route exact path="/signup" component={SignUp} />
+            <Route exact path="/createorder" component={CreateOrder} />
+          </Switch>
+          <Footer />
+        </div>
+
+        <Route exact path="/dashboard" component={Dashboard} />
       </Router>
     </>
   );

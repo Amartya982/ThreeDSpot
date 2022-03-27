@@ -78,7 +78,7 @@ DELETE {{baseURL}}/admins/{{adminID}}
 #
 #
 #
-@userID = user1
+@userID = 62376bfe387b34f60d2bbf40
 ###
 # @name getAllUsers
 GET {{baseURL}}/users
@@ -92,9 +92,9 @@ POST {{baseURL}}/users/signup
 Content-Type: application/json
 
 {
-  "emailAddress": "test@gmail.com",
-  "firstName": "joshua",
-  "lastName": "ilechukwu",
+  "emailAddress": "amarkumargta@gmail.com",
+  "firstName": "Amartya",
+  "lastName": "kumar",
   "gender": "male",
   "homeAddress": "home address",
   "maritalStatus": "single",
@@ -111,7 +111,6 @@ Content-Type: application/json
 }
 ###
 # @name deactivate
-@userID =  user1
 GET {{baseURL}}/users/acti
 
 
