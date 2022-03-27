@@ -1,5 +1,5 @@
 import React from 'react'
-import man from "../assets/clipart378694 1.png"
+import man from "../../assets/clipart378694 1.png"
 import { TextField } from '@material-ui/core'
 import styled from 'styled-components'
 
