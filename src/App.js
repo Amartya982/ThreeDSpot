@@ -1,6 +1,5 @@
 import "bulma/css/bulma.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/HomePage/HomePage";
 import Store from "./pages/Store/Store";
 import Navbar from "./Home/Nav/Navbar";
 import Contact from "./pages/Contact/Contact";
@@ -16,7 +15,7 @@ function App() {
   return (
     <>
       <Router>
-        <div>
+        <div className="gradient__bg">
           <Navbar />
           <Switch>
             <Route exact path="/" component={HomePage} />

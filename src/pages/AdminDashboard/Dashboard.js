@@ -89,7 +89,7 @@ function DashboardContent() {
   const toggleDrawer = () => {
     setOpen(!open);
   };
-  const handleOpen = () => setOpen(true);
+
 
   return (
     <ThemeProvider theme={mdTheme}>

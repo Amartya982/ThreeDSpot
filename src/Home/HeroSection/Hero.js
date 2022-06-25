@@ -1,5 +1,5 @@
 import React from "react";
-import spider from "../../assets/us-1.webp";
+import spider from "../../assets/heroSection.png";
 import { motion } from "framer-motion";
 import "./Hero.css";
 
@@ -11,15 +11,14 @@ const Hero = () => {
           <div className="column title-section ">
             <motion.div animate={{x: [0, 100, 0]}} transition={{ type: "spring", ease: "easeOut", duration: 2 }}>
               <p className="title">
-                <font style={{ color: " #EF5DA8" }}> Turning </font>images into
-                3D Model
+                <font className="title"> 2D IMAGE INTO<br/> 3D MODEL  </font>
+           
               </p>
             </motion.div>
 
             <br />
             <p className="subtitle">
-              Send the 2D Image and get a 3D Model ready for 3D Printing at a
-              affordable cost.
+              Send 2D Image and Get a 3D Model Ready For <br /> 3D Printing
             </p>
             <br />
             <a href="/order">

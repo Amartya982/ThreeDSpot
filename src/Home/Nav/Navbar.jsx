@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Navbar.css"
 import {HiOutlineShoppingCart} from "react-icons/hi"
 import { Link } from 'react-router-dom'
-
+import logo from "../../../src/assets/logo_white 1.png"
 
 const Navbar = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -11,9 +11,9 @@ const Navbar = () => {
             <nav className='navbar'>
 
             <Link to="/" className='logo-link'>
-            <h3 className='logo'>
-                3D Spot
-                </h3>
+            <figure className='image'>
+        <img src={logo} alt="" />
+                </figure>
                 </Link>
             <ul className={isMobile ? 'nav-links-mobile' : 'nav-links'}
                 onClick={() => setIsMobile(false)}>
@@ -45,7 +45,6 @@ const Navbar = () => {
                     <i className='fas fa-bars'></i>}
             </button>
         </nav>
-        <hr className="line" />
                </>
       
 

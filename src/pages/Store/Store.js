@@ -1,7 +1,7 @@
 import React from "react";
 import hero from "../../assets/action_webp/2.webp";
 import "./Store.css";
-import { BsCheckCircleFill } from "react-icons/bs";
+
 
 const Pricing = () => {
   return (

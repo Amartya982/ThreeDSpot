@@ -1,0 +1,29 @@
+.exclusive {
+    background: linear-gradient(274.7deg, #0d1626 -0.81%, #07090c 98.64%);
+  }
+.exclusive-title {
+  background: linear-gradient(
+    295.38deg,
+    #ffe5a2 4.89%,
+    #bf841a 50.44%,
+    #ffcd74 95.06%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+}
+
+.exclusive-container {
+    height: 427.71px;
+    background: url("../../assets/exclusive.png") no-repeat;
+    mix-blend-mode: normal;
+    background-size:cover;
+    width: 66%;
+ 
+  }

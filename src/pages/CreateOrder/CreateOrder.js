@@ -7,7 +7,7 @@ import "./CreateOrder.css"
 const fileTypes = ["JPEG", "PNG", "GIF"];
 const CreateOrder = () => {
 
-    const [file, setFile] = useState(null);
+    const [ setFile] = useState(null);
     const handleChange = (file) => {
       setFile(file);
     }

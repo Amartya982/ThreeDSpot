@@ -8,7 +8,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import logo from "../../assets/a.png";
+// import logo from "../../assets/a.png";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -63,7 +63,7 @@ export default function SignIn() {
               >
                 <Avatar sx={{ m: 1, opacity: 1 }}>
                   <figure className="image">
-                    <img src={logo} />
+                    {/* <img src={logo} /> */}
                   </figure>
                 </Avatar>
                 <Typography component="h1" className="sign-in" variant="h5">

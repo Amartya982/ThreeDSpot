@@ -9,11 +9,16 @@
   align-items: center;
   height: 80px;
   width: 100%;
-  background-color: black;
+  background: rgba(10, 12, 16, 0.25);
+  border-bottom: 1px solid #101822;
+  backdrop-filter: blur(25px);;
   color: white;
   position: sticky !important;
   top: 0;
-  position: sticky;
+  position: absolute;
+  right: 0;
+  min-width: 210px;
+  border-radius: 5px;
 }
 
 .logo {

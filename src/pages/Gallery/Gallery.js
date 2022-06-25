@@ -55,6 +55,9 @@ const Card = () => {
                       alt="Placeholder"
                     />
                   </figure>
+                  <div className="card-box">
+                    <p>Likeness</p>
+                  </div>
                 </div>
                 <br />
               </div>
@@ -71,6 +74,9 @@ const Card = () => {
                       alt="Placeholder"
                     />
                   </figure>
+                  <div className="card-box">
+                    <p style={{fontWeight:"600px"}}>Likeness</p>
+                  </div>
                 </div>
                 <br />
               </div>
@@ -88,6 +94,9 @@ const Card = () => {
                     />
                   </figure>
                 </div>
+                <div className="card-box">
+                    <p>Likeness</p>
+                  </div>
                 <br />
               </div>
             </div>

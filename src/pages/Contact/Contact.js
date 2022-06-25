@@ -47,13 +47,13 @@ const Contact = () => {
             <p className='contact-title has-text-centered'>Contact US</p>
             <br/>
 
-            <CssTextField id="outlined-basic" color="secondary"  label="Outlined" variant="outlined"  fullWidth label="Name" id="fullWidth" focused />
+            <CssTextField id="outlined-basic" color="secondary"  label="Outlined" variant="outlined"  focused />
             <br/>
             <br/>
-            <CssTextField id="outlined-basic" color="secondary"  label="Outlined" variant="outlined"  fullWidth label="Email Address" id="fullWidth" focused />
+            <CssTextField id="outlined-basic" color="secondary"  label="Outlined" variant="outlined"  fullWidth focused />
             <br/>
             <br/>
-            <CssTextField id="outlined-basic" color="secondary"  label="Outlined" variant="outlined"  fullWidth label="Description" id="descrip" focused />
+            <CssTextField id="outlined-basic" color="secondary"  label="Outlined" variant="outlined"  fullWidth  focused />
             <br/>
             <br/>
             <br/>
