@@ -77,29 +77,33 @@
   );
   background-blend-mode: lighten;
 }
-.gallerycard-box{
+.gallerycard-box {
   position: absolute;
-  background: linear-gradient(90deg, rgba(9, 11, 14, 0.81) 19.79%, rgba(9, 11, 14, 0) 97.4%);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 11, 14, 0.81) 19.79%,
+    rgba(9, 11, 14, 0) 97.4%
+  );
   height: 50px;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-
+  left: 0;
+  right: 0;
+  margin-left: auto;
 }
-.box-title{
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 300;
-font-size: 22px;
-line-height: 50px;
-letter-spacing: 0.035em;
-text-align: center;
-color: #FFFFFF;
-
+.box-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 0.035em;
+  color: #ffffff;
 }
-.gallerycard-image{
-
-  background: linear-gradient(121.88deg, rgba(244, 205, 104, 0.76) 0%, rgba(13, 13, 13, 0) 47.28%);
+.gallerycard-image {
+  background: linear-gradient(
+    121.88deg,
+    rgba(244, 205, 104, 0.76) 0%,
+    rgba(13, 13, 13, 0) 47.28%
+  );
   background-blend-mode: lighten;
   opacity: 0.81;
   border: 1px solid;

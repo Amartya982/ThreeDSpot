@@ -11,7 +11,7 @@
   width: 100%;
   background: rgba(10, 12, 16, 0.25);
   border-bottom: 1px solid #101822;
-  backdrop-filter: blur(25px);;
+  backdrop-filter: blur(25px);
   color: white;
   position: sticky !important;
   top: 0;
@@ -44,21 +44,26 @@
 }
 .home {
   text-decoration: none;
-  color: white;
+
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 10px;
-  font-family: Readex Pro;
+
+  font-family: "Montserrat";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 20px;
+
+  /* identical to box height */
+
+  color: #ffffff!important;
   cursor: pointer;
 }
-.login-butt{
-  background: rgba(255, 255, 255, 0.08)!important;
+.login-butt {
+  background: rgba(255, 255, 255, 0.08) !important;
   border-radius: 56px;
-  padding:px;
+  padding: px;
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
@@ -66,10 +71,9 @@
 
   color: #ffffff;
 }
-.cart-icon{
+.cart-icon {
   text-decoration: none;
   color: white;
-
 }
 .home:hover {
   color: yellow;
@@ -92,16 +96,15 @@
   .nav-links {
     display: none;
   }
-  .login-butt{
-    background: white!important;
+  .login-butt {
+    background: white !important;
     width: 40%;
     margin-left: auto;
     margin-right: auto;
   }
-  .cart-icon{
+  .cart-icon {
     text-decoration: none;
     color: rgb(0, 0, 0);
-  
   }
   .nav-links-mobile {
     position: absolute;
@@ -130,16 +133,15 @@
     align-items: center;
     transition: all 0.5s ease;
   }
-  .cart{
+  .cart {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    text-align: center; 
+    text-align: center;
     padding: 20px;
     align-items: center;
-
   }
- 
+
   .mobile-menu-icon {
     display: block;
     position: absolute;

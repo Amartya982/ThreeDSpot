@@ -25,6 +25,8 @@ a.instagram {
     #bf841a 50.44%,
     #ffcd74 95.06%
   );
+  outline: none;
+  
 }
 .connect {
   background: linear-gradient(
