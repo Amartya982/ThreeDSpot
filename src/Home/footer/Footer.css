@@ -18,16 +18,13 @@ a.social {
 a.social:hover {
   transform: translateY(-2px);
 }
-a.instagram {
-  background: linear-gradient(
-    295.38deg,
-    #ffe5a2 4.89%,
-    #bf841a 50.44%,
-    #ffcd74 95.06%
-  );
+.footer-icon{
+  color:  #d4b16e!important;
+  
   outline: none;
   
 }
+
 .connect {
   background: linear-gradient(
     295.38deg,

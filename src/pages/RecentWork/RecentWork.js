@@ -4,6 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import model1 from "../../assets/model1.png"
 import model2 from "../../assets/model2.png"
 import model3 from "../../assets/model3.png"
+import model4 from "../../assets/model4.jpg"
+import model5 from "../,./../assets/model5.jpg"
 
 import "./RecentWork.css";
 
@@ -26,7 +28,7 @@ const RecentWork = () => {
     <>
       <section className="hero recentwork-section">
         <div className="hero-body">
-          <div style={{ display: "flex" }}>
+          <div className="recent-work-box" style={{ display: "flex" }}>
             <div style={{ display: "flex", marginLeft: "auto" }}>
               <p id="title">RECENT WORK</p>
               <hr id="line_break"/>
@@ -58,7 +60,7 @@ const RecentWork = () => {
                 <div className="gallerycard-image">
                   <figure className="image">
                     <img
-                      src={model1}
+                      src={model2}
                   
                       alt="Placeholder"
                     />
@@ -75,7 +77,7 @@ const RecentWork = () => {
                 <div className="gallerycard-image">
                   <figure className="image">
                     <img
-                      src={model2}
+                      src={model3}
                 
                       alt="Placeholder"
                     />
@@ -92,7 +94,7 @@ const RecentWork = () => {
                 <div className="gallerycard-image">
                   <figure className="image">
                     <img
-                      src={model3}
+                      src={model4}
           
                       alt="Placeholder"
                     />
@@ -109,7 +111,7 @@ const RecentWork = () => {
                 <div className="gallerycard-image">
                   <figure className="image">
                     <img
-                      src={model3}
+                      src={model5}
             
                       alt="Placeholder"
                     />

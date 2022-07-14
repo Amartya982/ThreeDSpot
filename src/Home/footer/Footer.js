@@ -17,23 +17,23 @@ const Footer = () => {
      <div className="social-links">
      <a href="https://www.instagram.com/learnbuildteach"
         className="instagram social">
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
+        <FontAwesomeIcon icon={faInstagram} className="footer-icon" size="2x"/>
       </a>
       <a href="https://www.instagram.com/learnbuildteach"
         className="instagram social">
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
+        <FontAwesomeIcon icon={faFacebook} className="footer-icon" size="2x" />
       </a>
       <a href="https://www.instagram.com/learnbuildteach"
         className="instagram social">
-        <FontAwesomeIcon icon={faDiscord} size="2x" />
+        <FontAwesomeIcon className="footer-icon" icon={faDiscord} size="2x" />
       </a>
       <a href="https://www.instagram.com/learnbuildteach"
         className="instagram social">
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
+        <FontAwesomeIcon icon={faTwitter}className="footer-icon" size="2x" />
       </a>
       <a href="https://www.instagram.com/learnbuildteach"
         className="instagram social">
-        <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        <FontAwesomeIcon icon={faLinkedin} className="footer-icon" size="2x" />
       </a>
      </div>
       </div>

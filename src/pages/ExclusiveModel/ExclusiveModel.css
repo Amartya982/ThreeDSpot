@@ -21,9 +21,22 @@
 
 .exclusive-container {
     height: 427.71px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
     background: url("../../assets/exclusive.png") no-repeat;
     mix-blend-mode: normal;
     background-size:cover;
     width: 66%;
  
+  }
+  
+  @media screen  and (max-width: 480px){
+    .exclusive-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }

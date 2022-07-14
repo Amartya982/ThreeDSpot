@@ -10,6 +10,7 @@
   border-left: thick solid #ff0000;
 }
 
+
 #title {
   background: linear-gradient(
     295.38deg,
@@ -117,4 +118,11 @@
     rgba(15, 18, 24, 0) 100%
   );
   border-image-slice: 1;
+}
+@media screen and (max-width: 480px) {
+.recent-work-box{
+  margin-top: 100px;
+}
+
+
 }

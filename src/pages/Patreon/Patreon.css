@@ -1,6 +1,4 @@
-.patreon-section {
-  margin-top: -120px;
-}
+
 .patreon-container {
   background: url("../../assets/patreon.png") no-repeat;
   mix-blend-mode: screen;
@@ -55,4 +53,12 @@ text-decoration: none;
 padding: 4px 9px;
 margin-left: auto;
 margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+.join-patreon{
+  margin-top: 100px;
+}
+
+
 }
