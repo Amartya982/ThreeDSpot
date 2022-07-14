@@ -9,7 +9,9 @@
 .verticalLine {
   border-left: thick solid #ff0000;
 }
-
+.model-image {
+  width: 100%!important;
+}
 
 #title {
   background: linear-gradient(
@@ -120,11 +122,8 @@
   border-image-slice: 1;
 }
 
-
 @media screen and (max-width: 480px) {
-.recent-work-box{
-  margin-top: 100px;
-}
-
-
+  .recent-work-box {
+    margin-top: 100px;
+  }
 }

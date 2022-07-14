@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className="navbar">
         <Link to="/" className="logo-link">
           <figure className="image">
-            <img src={logo} alt="" />
+            <img  className="logo-image"src={logo} alt="" />
           </figure>
         </Link>
         <ul

@@ -84,14 +84,16 @@
   display: none;
 }
 @media screen and (max-width: 780px) {
-  .navbar {
-    position: relative;
-  }
-  .logo {
+.navbar{
+  justify-content: space-between;
+}
+
+
+  .logo-image{
     display: flex;
-    position: absolute;
-    top: 15px;
-    left: 35px;
+    align-items: flex-start;
+
+
   }
   .nav-links {
     display: none;
@@ -152,5 +154,14 @@
     outline: none;
     top: 15px;
     right: 25px;
+  }
+  @media screen and (max-width: 480px) {
+.logo-image{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
   }
 }

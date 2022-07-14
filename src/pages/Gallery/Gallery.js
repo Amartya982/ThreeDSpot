@@ -1,9 +1,25 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import model1 from "../../assets/model1.png";
-import model2 from "../../assets/model2.png";
-import model3 from "../../assets/model3.png";
+import model7 from "../../assets/model7.jpg";
+import model10 from "../../assets/model10.jpg";
+import model11 from "../../assets/model11.jpg";
+import model12 from "../../assets/model12.jpg";
+import model13 from "../../assets/model13.jpg";
+import model14 from "../../assets/model14.jpg";
+import model15 from "../../assets/model15.jpg";
+import model16 from "../../assets/model16.jpg";
+import model17 from "../../assets/model17.jpg";
+import model18 from "../../assets/model18.jpg";
+import model19 from "../../assets/model19.jpg";
+import model20 from "../../assets/model20.jpg";
+import model21 from "../../assets/model21.jpg";
+import model22 from "../../assets/model22.jpg";
+import model23 from "../../assets/model23.jpg";
+import model24 from "../../assets/model24.jpg";
+import model25 from "../../assets/model25.jpg";
+import model26 from "../../assets/model26.jpg";
+import model27 from "../../assets/model27.webp";
 
 import "./Gallery.css";
 
@@ -44,7 +60,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model1} alt="Placeholder" />
+                    <img src={model10} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -58,7 +74,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model1} alt="Placeholder" />
+                    <img src={model25} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -71,7 +87,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model2} alt="Placeholder" />
+                    <img src={model12} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -84,7 +100,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model3} alt="Placeholder" />
+                    <img src={model13} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -97,7 +113,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model3} alt="Placeholder" />
+                    <img src={model14} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -119,7 +135,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model1} alt="Placeholder" />
+                    <img src={model7} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -133,7 +149,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model1} alt="Placeholder" />
+                    <img src={model26} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -146,7 +162,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model2} alt="Placeholder" />
+                    <img src={model27} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -159,7 +175,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model3} alt="Placeholder" />
+                    <img src={model14} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -172,7 +188,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model3} alt="Placeholder" />
+                    <img src={model15} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -194,7 +210,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model1} alt="Placeholder" />
+                    <img src={model15} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -208,7 +224,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model1} alt="Placeholder" />
+                    <img src={model16} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -221,7 +237,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model2} alt="Placeholder" />
+                    <img src={model17} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -234,7 +250,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model3} alt="Placeholder" />
+                    <img src={model18} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -247,7 +263,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model3} alt="Placeholder" />
+                    <img src={model19} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -269,7 +285,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model1} alt="Placeholder" />
+                    <img src={model20} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -283,7 +299,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model1} alt="Placeholder" />
+                    <img src={model11} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -296,7 +312,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model2} alt="Placeholder" />
+                    <img src={model22} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -309,7 +325,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model3} alt="Placeholder" />
+                    <img src={model23} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
@@ -322,7 +338,7 @@ const Card = () => {
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
                   <figure className="image">
-                    <img src={model3} alt="Placeholder" />
+                    <img src={model24} alt="Placeholder" />
                   </figure>
                 </div>
                 <div className="gallerycard-box">
