@@ -5,7 +5,8 @@ import model1 from "../../assets/model1.png"
 import model2 from "../../assets/model2.png"
 import model3 from "../../assets/model3.png"
 import model4 from "../../assets/model4.jpg"
-import model5 from "../,./../assets/model5.jpg"
+
+
 
 import "./RecentWork.css";
 
@@ -109,9 +110,9 @@ const RecentWork = () => {
             <div className="card" id="recent-gallery">
               <div className="card-content-gallery">
                 <div className="gallerycard-image">
-                  <figure className="image">
+                  <figure className="image ">
                     <img
-                      src={model5}
+                      src={model4}
             
                       alt="Placeholder"
                     />

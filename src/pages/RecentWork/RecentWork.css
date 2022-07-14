@@ -119,6 +119,8 @@
   );
   border-image-slice: 1;
 }
+
+
 @media screen and (max-width: 480px) {
 .recent-work-box{
   margin-top: 100px;
