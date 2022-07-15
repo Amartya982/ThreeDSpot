@@ -13,7 +13,6 @@ import model17 from "../../assets/model17.jpg";
 import model18 from "../../assets/model18.jpg";
 import model19 from "../../assets/model19.jpg";
 import model20 from "../../assets/model20.jpg";
-import model21 from "../../assets/model21.jpg";
 import model22 from "../../assets/model22.jpg";
 import model23 from "../../assets/model23.jpg";
 import model24 from "../../assets/model24.jpg";
@@ -64,7 +63,7 @@ const Card = () => {
                   </figure>
                 </div>
                 <div className="gallerycard-box">
-                  <p className="box-title">Likeness</p>
+                  <p className="box-title">Soldier</p>
                 </div>
                 <br />
               </div>
@@ -78,7 +77,7 @@ const Card = () => {
                   </figure>
                 </div>
                 <div className="gallerycard-box">
-                  <p className="box-title">Likeness</p>
+                  <p className="box-title">Concept Art</p>
                 </div>
                 <br />
               </div>

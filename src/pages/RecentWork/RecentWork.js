@@ -1,9 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import model1 from "../../assets/model1.png";
-import model2 from "../../assets/model2.png";
-import model3 from "../../assets/model3.png";
 import model4 from "../../assets/model4.jpg";
 import model5 from "../../assets/model5.jpg";
 import model6 from "../../assets/model6.jpg";
